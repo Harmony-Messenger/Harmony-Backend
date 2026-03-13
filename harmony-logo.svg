@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" width="480" height="160">
+  <defs>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00e5c3"/>
+      <stop offset="100%" style="stop-color:#00a8f3"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="160" rx="16" fill="#0d1117"/>
+
+  <!-- Waveform bars (squashed) -->
+  <g filter="url(#glow)" transform="translate(68, 80)">
+    <rect x="-21" y="-8"  width="6" height="16" rx="3" fill="url(#waveGrad)" opacity="0.45"/>
+    <rect x="-13" y="-16" width="6" height="32" rx="3" fill="url(#waveGrad)" opacity="0.65"/>
+    <rect x="-5"  y="-24" width="6" height="48" rx="3" fill="url(#waveGrad)" opacity="0.85"/>
+    <rect x="3"   y="-24" width="6" height="48" rx="3" fill="url(#waveGrad)" opacity="0.85"/>
+    <rect x="11"  y="-16" width="6" height="32" rx="3" fill="url(#waveGrad)" opacity="0.65"/>
+    <rect x="19"  y="-8"  width="6" height="16" rx="3" fill="url(#waveGrad)" opacity="0.45"/>
+  </g>
+
+  <!-- Broadcast arcs -->
+  <g filter="url(#glow)">
+    <path d="M 100 65 A 20 20 0 0 1 100 95" fill="none" stroke="url(#waveGrad)" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 100 55 A 30 30 0 0 1 100 105" fill="none" stroke="url(#waveGrad)" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+    <path d="M 100 45 A 40 40 0 0 1 100 115" fill="none" stroke="url(#waveGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.25"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text
+    x="148"
+    y="91"
+    font-family="'Georgia', 'Times New Roman', serif"
+    font-size="48"
+    font-weight="400"
+    letter-spacing="2"
+    fill="#ffffff"
+    opacity="0.95"
+  >Harmony</text>
+
+  <!-- Tagline -->
+  <text
+    x="151"
+    y="113"
+    font-family="'Courier New', monospace"
+    font-size="10"
+    letter-spacing="4"
+    fill="#00e5c3"
+    opacity="0.6"
+  >CONNECT · SHARE · STREAM</text>
+
+</svg>
