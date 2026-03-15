@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <strong>This is the backend API component.  You will need a frontend component such as:  <a href="https://github.com/Harmony-Messenger/Frontend">https://github.com/Harmony-Messenger/Frontend</a></strong>
+  <strong>This is the backend API component.  You will need a frontend component such as:  <a href="https://github.com/Harmony-Messenger/Harmony-Frontend">https://github.com/Harmony-Messenger/Harmony-Frontend</a></strong>
 </p>
  
 ---
