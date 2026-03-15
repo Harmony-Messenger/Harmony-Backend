@@ -526,7 +526,7 @@ if(isset($_GET['Page']))
                 $Statement = $DB->prepare("INSERT INTO AccessLevels (ID, Name, Colour) VALUES (2, 'Users', '#ffffff')");
                 $Statement->execute();
 
-                $Statement = $DB->prepare("INSERT INTO AccessLevelGlobalPermissions (AccessLevelID, ModifyChannels, BanUsers, DeleteMessages, ModifyAccess, ModifyProfiles, DeleteUsers) VALUES (1, 1, 1, 1, 1, 1, 0)");
+                $Statement = $DB->prepare("INSERT INTO AccessLevelGlobalPermissions (AccessLevelID, ModifyChannels, BanUsers, DeleteMessages, ModifyAccess, ModifyProfiles, DeleteUsers) VALUES (1, 1, 1, 1, 1, 1, 1)");
                 $Statement->execute();
 
                 $Statement = $DB->prepare("INSERT INTO AccessLevelGlobalPermissions (AccessLevelID, ModifyChannels, BanUsers, DeleteMessages, ModifyAccess, ModifyProfiles, DeleteUsers) VALUES (2, 0, 0, 0, 0, 0, 0)");
