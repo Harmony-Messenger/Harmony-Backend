@@ -48,7 +48,6 @@
  
 - PHP 8.1+ with gd support
 - MySQL / MariaDB
-- Node.js 18+
 - A web server (Nginx or Apache)
  
 
